@@ -1,0 +1,39 @@
+﻿# Gradle
+.gradle
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!gradle-wrapper.jar
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Log files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Compiled resources
+*.class
+
+# Secrets and environment files
+*.env
+.env.*
+secrets/
+
+# OS generated files
+ehthumbs_windows.db
+Thumbs.db
+._*

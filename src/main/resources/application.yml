@@ -1,0 +1,5 @@
+common:
+  name: ai-by-tests
+
+openai:
+  api-key: your key
