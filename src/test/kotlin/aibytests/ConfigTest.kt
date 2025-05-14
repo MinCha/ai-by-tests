@@ -1,11 +1,11 @@
 package aibytests
 
-import org.assertj.core.api.Assertions
+import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test
 
 class ConfigTest : UnitTest() {
     @Test
     fun canGetKey() {
-        Assertions.assertThat(Config.name).isEqualTo("ai-by-tests")
+        assertThat(Config.name).isEqualTo("ai-by-tests")
     }
 }
