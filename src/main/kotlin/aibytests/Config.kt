@@ -16,7 +16,7 @@ object Config {
     private val common: Map<String, String> by lazy { getConfigMap("common") }
     private val openAI: Map<String, String> by lazy { getConfigMap("openai") }
 
-    val openAiKey: String by lazy { System.getenv("openai.api-key") ?: openAI["api-key"]!! }
+    val openAiKey: String by lazy { System.getenv("openai.api-key") ?: System.getenv("openai_api_key") ?: openAI["api-key"]!! }
     val name: String by lazy { common["name"]!! }
 
     private fun getConfigMap(rootKey: String): Map<String, String> {
