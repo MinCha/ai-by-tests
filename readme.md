@@ -1,5 +1,15 @@
-This project is designed to provide developers interested in AI, but not familiar with it, with test-guided examples. You can understand use cases of application-level AI, such as RAG, embeddings, and other functionalities provided by the OpenAI platform, simply by reading the test cases.
+# AI By Tests
 
-### Examples written so far (to be added continuously)
-1. [KoreanEmbeddingTest](src/test/kotlin/aibytests/openai/KoreanEmbeddingTest.kt): semantic similarity, search
-2. [BasicRAGTest](src/test/kotlin/aibytests/openai/BasicRAGTest.kt): conceptual flow
+This project provides examples guided by tests for developers who are interested in AI but are not yet familiar with it. Through reading test cases, you can understand various application-level AI use cases, such as RAG (Retrieval-Augmented Generation), embeddings, and other functionalities provided by the OpenAI platform.
+
+### Examples (More to Come)
+1. [KoreanEmbeddingTest](src/test/kotlin/aibytests/openai/KoreanEmbeddingTest.kt)
+    * Demonstrates how similar meanings yield high similarity scores, even when different words are used and the language is Korean.
+    * Shows embedding-based semantic search capabilities.
+2. [BasicRAGTest](src/test/kotlin/aibytests/openai/BasicRAGTest.kt)
+    * Demonstrates the conceptual flow of RAG:
+      * Set up simple documents without a vector database such as FAISS.
+      * Search for a relevant document using the query.
+      * Generate a response with the retrieved content.
+      * Assert the result.
+
