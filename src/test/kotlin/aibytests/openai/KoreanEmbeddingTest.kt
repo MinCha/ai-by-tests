@@ -28,7 +28,7 @@ class KoreanEmbeddingTest : UnitTest() {
 
     @Test
     fun searchReturnsCorrectRankingBasedOnSimilarity() {
-        val keyword = sut.getEmbeddings("이순신 임진왜란")
+        val keyword = sut.getEmbeddings("이순신 임진왜란 견제")
 
         val scores = listOf(a, b, c).map { similarity(keyword, it) }
         log(scores)
