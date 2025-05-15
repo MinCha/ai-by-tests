@@ -4,12 +4,10 @@ This project provides examples guided by tests for developers who are interested
 
 ### Examples (More to Come)
 1. [KoreanEmbeddingTest](src/test/kotlin/aibytests/openai/KoreanEmbeddingTest.kt)
-    * Demonstrates how similar meanings yield high similarity scores, even when different words are used and the language is Korean.
-    * Shows embedding-based semantic search capabilities.
+   * Demonstrates how similar meanings yield high similarity scores, even when different words are used and the language is Korean.
+   * Shows embedding-based semantic search capabilities.
 2. [BasicRAGTest](src/test/kotlin/aibytests/openai/BasicRAGTest.kt)
-    * Demonstrates the conceptual flow of RAG:
-      * Set up simple documents without a vector database such as FAISS.
-      * Search for a relevant document using the query.
-      * Generate a response with the retrieved content.
-      * Assert the result.
+   * Set up simple documents in memory for clarity
+   * Search for a relevant document using the query. 
+   * Generate a response with the retrieved content.
 
