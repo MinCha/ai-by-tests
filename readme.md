@@ -8,6 +8,10 @@ This project provides examples guided by tests for developers who are interested
    * Shows embedding-based semantic search capabilities.
 2. [BasicRAGTest](src/test/kotlin/aibytests/openai/BasicRAGTest.kt)
    * Set up simple documents in memory for clarity
-   * Search for a relevant document using the query. 
+   * Search for a relevant document using the query.
    * Generate a response with the retrieved content.
+
+### Configuration
+* Tests require an OpenAI API key.
+* Set the environment variable `OPENAI_API_KEY` (or `openai_api_key`) or edit `src/main/resources/application.yml` to provide the key.
 
