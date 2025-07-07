@@ -64,6 +64,11 @@
 #
 ##############################################################################
 
+# Use a pre-installed Gradle if available to avoid downloading the wrapper distribution.
+if command -v gradle >/dev/null 2>&1 && [ -z "$USE_GRADLE_WRAPPER" ]; then
+    exec gradle "$@"
+fi
+
 # Attempt to set APP_HOME
 
 # Resolve links: $0 may be a link
